@@ -75,6 +75,14 @@
     font-family: 'soehne-buch';
   }
   
+  h1 {
+    font-family; 'soehne-kraftig';
+  }
+  
+  .notion-header__title {
+    font-family; 'soehne-kraftig';
+  }
+  
   /* Table Styling */
   
   .notion-collection-table td, .notion-collection-table th. {
