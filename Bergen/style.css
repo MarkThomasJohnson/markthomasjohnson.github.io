@@ -1,7 +1,16 @@
-
 @font-face {
-    font-family: 'Sohne';
+    font-family: 'soehne-buch';
     src:  url('https://markthomasjohnson.github.io/Fonts/soehne-buch.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'soehne-kraftig
+    src:  url('https://markthomasjohnson.github.io/Fonts/kraftig.woff2')format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'soehne-leicht';
+    src:  url('https://markthomasjohnson.github.io/Fonts/soehne-leicht.woff2') format('woff2');
   }
   
   /* Colors */
@@ -63,7 +72,7 @@
   /* Style Type */
   
   body {
-    font-family: 'Sohne', sans-serif;
+    font-family: 'soehne-buch';
   }
   
   /* Table Styling */
@@ -100,4 +109,3 @@
   overflow: hidden;
   background: var(--color-card-bg);
   }
-  
