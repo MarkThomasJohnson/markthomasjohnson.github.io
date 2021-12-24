@@ -1,26 +1,190 @@
 @font-face {
+  font-family: 'soehne-buch';
+  src:  url(https://markthomasjohnson.github.io/Fonts/soehne-buch.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'soehne-kraftig';
+  src:  url(https://markthomasjohnson.github.io/Fonts/soehne-kraftig.woff2)format('woff2');
+}
+
+@font-face {
+  font-family: 'soehne-leicht';
+  src:  url(https://markthomasjohnson.github.io/Fonts/soehne-leicht.woff2) format('woff2');
+}
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 600px) {
+
+h1 {
+  font-family: 'soehne-kraftig';
+  font-size: 3rem;
+  }  
+  
+h1.notion-header__title {
+  font-family: 'soehne-kraftig';
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: -.1rem;
+  font-weight: 700;
+  padding: 2px;
+  margin-bottom: 0;
+  margin-top: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+  
+h2.notion-heading {
+  font-family: 'soehne-leicht';
+  font-size: 2rem;
+  letter-spacing: 0rem;
+}
+
+h3.notion-heading {
+  font-family: 'soehne-kraftig';
+  font-size: 1.25rem;
+  letter-spacing: 0rem;
+}
+
+.super-navbar__logo span {
+  font-family: 'soehne-kraftig';
+  font-size: 1.5rem;
+}
+.super-navbar.simple{
+  box-shadow: 0px 0px 0px 4px var(--color-text-default);
+}
+.super-navbar__item {
+  font-family: 'soehne-leicht';
+}
+
+.super-navbar__cta {
+  /*background-color: var(--color-text-default);*/
+  border: 1px var(--color-text-default) solid;
+} 
+
+.super-navbar__cta:hover {
+  background-color: var(--color-text-default);
+  border: 1px var(--color-text-default) solid;
+  opacity: 1;
+}
+.notion-property__title__icon-wrapper {
+  display: none;
+}
+.notion-header__cover.no-cover {
+  max-height: 48px;
+  height: 48px;
+}
+.notion-header__content.no-cover.has-icon .notion-header__title-wrapper {
+  margin-top: 0px;
+}
+
+.notion-header__icon-wrapper {
+  /*font-size: 78px;*/
+  /*line-height: 78px;*/
+  /*position: absolute;*/
+  /*padding: 3px;*/
+  /*bottom: 40px;*/
+  display: none;
+}
+}
+
+
+/*Typography*/
+
+@media only screen and (min-width: 768px) {
+
+/* Desktop */
+  
+  body {
     font-family: 'soehne-buch';
-    src:  url('https://markthomasjohnson.github.io/Fonts/soehne-buch.woff2') format('woff2');
   }
   
-  @font-face {
-    font-family: 'soehne-kraftig
-    src:  url('https://markthomasjohnson.github.io/Fonts/kraftig.woff2')format('woff2');
-  }
-  
-  @font-face {
+  p {
     font-family: 'soehne-leicht';
-    src:  url('https://markthomasjohnson.github.io/Fonts/soehne-leicht.woff2') format('woff2');
   }
+
+h1.notion-header__title {
+  font-family: 'soehne-kraftig';
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: -.1rem;
+  padding: 2px;
+  margin-bottom: 0;
+  margin-top: 96px;
+  font-size: 6rem;
+  line-height: 6rem;
+  min-height: 75px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
   
-  /* Colors */
+h2.notion-heading {
+  font-family: 'soehne-leicht';
+  font-size: 2.5rem;
+  letter-spacing: 0;
+}
+
+h3.notion-heading {
+  font-family: 'soehne-kraftig';
+  font-size: 1.25rem;
+}
+.super-navbar__logo span {
+  font-family: 'soehne-kraftig';
+  font-size: 1.5rem;
+}
+.super-navbar.simple{
+  box-shadow: 0px 0px 0px 6px var(--color-text-default);
+}
+.super-navbar__item {
+  font-family: 'soehne-leicht';
+}
+
+.super-navbar__cta {
+  /*background-color: var(--color-text-default);*/
+  border: 1px var(--color-text-default) solid;
+} 
+
+.super-navbar__cta:hover {
+  background-color: var(--color-text-default);
+  border: 1px var(--color-text-default) solid;
+  opacity: 1;
+}
+.notion-property__title__icon-wrapper {
+  display: none;
+}
+.notion-header__cover.no-cover {
+  max-height: 0px;
+  height: 0px;
+}
+.notion-header__content.no-cover.has-icon .notion-header__title-wrapper {
+  margin-top: 96px;
+}
+
+.notion-header__content.no-cover.has-icon-image .notion-header__title-wrapper {
+    margin-top: 96px;
+}
+
+.notion-header__icon-wrapper {
+  /*font-size: 78px;*/
+  /*line-height: 78px;*/
+  /*position: absolute;*/
+  /*padding: 3px;*/
+  /*bottom: 40px;*/
+  display: none;
+}
+}
+
+
+/* Colors */
   
   :root {
     --color-text-default: rgba(255,255,255,0.9);
   --color-text-default-light: rgba(255, 255, 255, 0.9);
   --color-text-gray: rgba(151, 154, 155, 0.95);
   --color-text-brown: #937264;
-  --color-text-orange: #FFA344;
+  --color-text-orange: #FF8E4F;
   --color-text-yellow: #FFDC49;
   --color-text-green: #4DAB9A;
   --color-text-blue: #529CCA;
@@ -57,10 +221,10 @@
   --color-pill-pink: rgba(66, 66, 66, 0.5);
   --color-pill-red: rgba(66, 66, 66, 0.5);
   --color-ui-hover-bg: rgb(43,46,48);
-  --color-ui-hover-bg-light: rgb(71,76,80);
+  --color-ui-hover-bg-light: rgb(43,46,48);
   --color-card-bg: #2B2E30;
   --color-accent-bg: #364954;
-  --color-border-default: rgb(28, 28, 28);
+  --color-border-default: rgb(43,46,48);
   --color-border-dark: rgb(69, 75, 78);
   --column-spacing: 46px;
   --collection-card-cover-size-small: 172px;
@@ -68,47 +232,72 @@
   --collection-card-cover-size-large: 320px;
   --scrollbar-width: 15px;
   }
+
+/*Icon*/
+.notion-header.collection .notion-header__icon {
+  display:none;
+}
+
+.notion-header__icon-wrapper.has-cover.has-icon {
+  display: none;
+}
+
+.notion-icon.notion-icon__page {
+  display:none!important;
+}
+
+.notion-page__icon {
+  display:none;
+}
+
+.notion-header__icon {
+  display: none !important;
+}
+
+/*Layout*/
+
+.notion-header.collection .notion-header__title-wrapper {
+margin-left: -52px;
+}
   
-  /* Style Type */
+.notion-collection-table__cell.multi_select .notion-pill, .notion-collection-table__cell.select .notion-pill {
+  border-radius: 12px;
+  padding: 2px 8px 4px 8px;
+}
   
-  body {
-    font-family: 'soehne-buch';
-  }
   
-  h1 {
-    font-family; 'soehne-kraftig';
-  }
-  
-  .notion-header__title {
-    font-family; 'soehne-kraftig';
-  }
-  
-  /* Table Styling */
-  
-  .notion-collection-table td, .notion-collection-table th. {
-    border-bottom: 1px;
-  }
-  
-  /*Elements*/
-  
-  .notion-pill {
-    border-radius: 12px;
-    padding: 3px 8px;
-  }
-  
-  .notion-collection-gallery {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-gap: 16px;
-    gap: 16px;
+.notion-collection-gallery {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 16px;
+  gap: 16px;
   padding-top: 16px;
   padding-bottom: 4px;
   border-top: 0px;
-  }
+}
   
-  .notion-collection-card {
-    width: 100%;
-    height: 100%;
+.notion-collection-list__item {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 8px 8px;
+  margin: 1px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+  
+.notion-collection-card {
+  width: 100%;
+  height: 100%;
   box-shadow: 0 0 0 1px hsla(0,0%,6%,.1),0 2px 4px hsla(0,0%,6%,.1);
   border-radius: 12px;
   transition: background .12s ease-in 0s;
@@ -116,4 +305,24 @@
   cursor: pointer;
   overflow: hidden;
   background: var(--color-card-bg);
-  }
+}
+  
+.notion-collection-list__item-property .notion-property__select .notion-pill {
+    border-radius: 12px;
+    padding: 2px 8px 4px 8px;
+}
+
+.notion-pill {
+    border-radius: 12px;
+    padding: 2px 8px 4px 8px;
+}
+
+.notion-collection-table td, .notion-collection-table th {
+    border-bottom: 1px solid var(--color-border-default);
+    border-left: none;
+    border-right: none;
+}
+
+.notion-page>div {
+  padding:3px 8px 5px 8px;
+}
